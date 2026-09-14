@@ -1,6 +1,6 @@
 package atv2_cadastroUsuario;
 
-public class cadastroUsuario_v01 {
+public class variantes_e_console {
 	public static void main(String[] args) {
 		String nome = "Andrey";
 		int idade = 19;
