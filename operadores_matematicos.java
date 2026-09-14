@@ -1,6 +1,6 @@
 package atv2_cadastroUsuario;
 
-public class cadastroUsuario_v01 {
+public class operadores_matematicos {
 	public static void main(String[] args) {
 		int nota1 = 4;
 		int nota2 = 7;
