@@ -1,0 +1,69 @@
+package pct_revisar_metodos;
+
+import java.util.Scanner;
+
+public class SistemaDeNotas {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int opcao;
+
+		do {
+			exibirMenu();
+			opcao = scanner.nextInt();
+
+			switch (opcao) {
+				case 1:
+					cadastrarNotas(scanner);
+					break;
+				case 2:
+					System.out.print("2");
+					break;
+				case 3:
+					System.out.print("3");
+					break;
+				case 4:
+					System.out.print("4");
+					break;
+				case 5:
+					System.out.println("Saindo...");
+					break;
+			}
+
+		} while (opcao != 5);
+
+		scanner.close();
+	}
+
+	public static void exibirMenu() {
+		System.out.println("\n===== SISTEMA DE NOTAS =====\r\n" 
+				+ "1 - Cadastrar notas\r\n" 
+				+ "2 - Mostrar notas\r\n"
+				+ "3 - Mostrar média, maior e menor\r\n" 
+				+ "4 - Mostrar aprovados e reprovados\r\n" 
+				+ "5 - Sair");
+	}
+
+	public static double cadastrarNotas(Scanner scanner) {
+		System.out.print("Quantos alunos deseja cadastrar? ");
+		int quantidadeAlunos = scanner.nextInt();
+		double[] notas = new double[quantidadeAlunos];
+		
+		for(int i =0; i < notas.length; i++) {
+			System.out.printf("\nInsira a nota do aluno %d:", (i+1) );
+		}
+		return notas[0];
+	}
+
+	public static double exibirNotas(double[] notas) {
+		double[] a = { 1.2, 2.3 };
+		return a[0];
+	}
+
+	public static double calcularMediaMaiorMenor(double a) {
+		return a;
+	}
+
+	public static int contarAprovados(double[] notas) {
+		return 1;
+	}
+}
